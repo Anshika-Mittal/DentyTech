@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding : up, down = 0px and left, right = 30px */
+    padding: 0px 40px;
+    /* to give gap between elements of nav-part1 */
+    /* gap: 5px; */
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding : up, down = 0px and left, right = 30px */
+    padding: 0px 40px;
+    /* to give gap between elements of nav-part1 */
+    /* gap: 5px; */
+}
+
+#nav h3{
+    font-size: 17px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 5px 10px;
+    /* For round borders */
+    border-radius: 50px;
+}
+
+#nav i{    
+    border: 1.5px solid black;
+    padding: 5px 8px;
+    /* For round borders */
+    border-radius: 50px;
+}
+
+#nav h1{
+    font-weight: 500;
+    font-size: 22px;
+    /* To make all the letters capital */
+    text-transform: uppercase;
+}
+
+#nav button{
+    padding: 7px 12px;
+    border-radius: 50px;
+    border: 1.5px solid black;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+}
+
+#nav-part3 #btn2{
+    background-color: orangered;
+    color: white;
+    /* To remove border */
+    border: none;
+}
+
+/* Main k direct ander wala h1 */
+#main>h1{
+    font-size: 135px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* To have in single line */
+    width: 100%;
+    /* to come in center */
+    text-align: center;
+}
+
+img{
+    height: 500px;
+    width: 400px;
+    /* Helps to cover  image tag */
+    object-fit: cover;
+    /* to cover top of the image */
+    object-position: top;
+
+    /* used when image is in background of div */
+    /* background-size: cover; */
+
+    /* rounded borders */
+    border-radius: 20px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#img1{
+    /* to rotate clockwise */
+    /* rotate: 10deg; */
+    /* to rotate anti-clockwise */
+    /* rotate: -10deg; */
+
+    /* Didnt use rotate individually to prevent overwriting of transform because rotate is a property of transform  */
+    transform: translate(-50%,-50%) rotate(-23deg);
+}
+
+#img2{
+    transform: translate(-50%,-50%) rotate(-13deg);
+}
+
+#img3{
+    transform: translate(-50%,-50%) rotate(-3deg);
+}
+
+#img4{
+    transform: translate(-50%,-50%) rotate(3deg);
+}
+
+#btm-left{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 17px;
+}
+
+#Tech{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(3deg);
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: salmon;
+    border: none;
+}
+
+#setting{
+    position: absolute;
+    top: 19%;
+    left: 44%;
+    transform: translate(-50%, -50%) rotate(2deg);
+    border-radius: 20px;
+    padding: 9px;
+    background-color: salmon;
+    border: none;
+}
+
+#btm{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    font-size: 30px;
+    /* transform: translate(-50%, -50%) ; */
+}
+
+.icons{
+    font-size: 30px;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}
